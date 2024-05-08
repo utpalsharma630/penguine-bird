@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguine</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .bebas-font{
+            font-family: "Bebas Neue", sans-serif;
+        }
+        .roboto-font{
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <header class="bg-[#e9e2cf] px-32 items-center justify-center">
-        <nav class="flex justify-between py-10">
+    <header class="bg-[#e9e2cf] py-20 px-4 md:px-32 items-center justify-center">
+        <nav class="md:flex justify-between py-10">
             <div >
                 <img class="w-40" src="icons/logo.png" alt="">
             </div>
             <div>
-                <ul class="flex gap-10 text-base">
+                <ul class="md:flex gap-10 text-base">
                     <li><a href="">Home</a></li>
                     <li><a href="">Product</a></li>
                     <li><a href="">About us</a></li>
@@ -21,19 +32,21 @@
                 </ul>
             </div>
         </nav>
-        <section class="flex items-center justify-between">
+        <section class="flex flex-col md:flex-row items-center justify-between">
             <div>
-                <h2 class="text-7xl uppercase text-[#363958]"><span class="text-[#FABE4C]" >Be the Penguins</span><br>of Winter</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <button><img  src="icons/shopping-cart 1.png"/>BUY NOW</button>
+                <h2 class="text-7xl bebas-font uppercase text-[#363958]"><span class="text-[#FABE4C]" >Be the Penguins</span><br>of Winter</h2>
+                <p class="text-base text-[#363958] py-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <button class="flex items-center bg-gradient-to-r from-[#A4BC46] to-[#85A019] font-medium text-base p-3 rounded text-white"><img class="w-7" src="icons/shopping-cart 1.png"/>BUY NOW</button>
             </div>
             <div class="pb-12">
                 <img src="images/model.png" alt="">
             </div>
         </section>
     </header>
-    <main>
-
+    <main class="max-w-7xl mx-auto">
+        <section class="py-12">
+            <h3 class="bebas-font text-5xl ">W0Man Jacket</h3>
+        </section>
     </main>
     <footer>
 
